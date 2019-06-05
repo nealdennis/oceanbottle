@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-family: 'PT Serif', serif;
+} 
+
+a {
+    text-decoration: none;
+}
+
+.hero-image {
+    background: url(resources/images/banner-image.jpg) no-repeat center;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+nav {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: auto;
+}
+
+.banner {
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text
+{
+    width: 100%;
+    margin-top: 10%;    
+}
+
+.hero-text p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.cta {
+    margin-top: 60px;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	padding:18px 60px;
+	text-decoration:none;
+}
+
+.white {
+    color: #012461;
+    border:1px solid#FFFFFF;
+    background: #FFFFFF;
+}
