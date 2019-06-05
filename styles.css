@@ -15,7 +15,7 @@ a {
     text-decoration: none;
 }
 
-.hero-image {
+.banner {
     background: url(resources/images/banner-image.jpg) no-repeat center;
 }
 
@@ -41,23 +41,12 @@ nav li {
     margin-right: auto;
 }
 
-.banner {
-    
+.banner-text {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.hero-text
-{
-    width: 100%;
-    margin-top: 10%;    
-}
-
-.hero-text p {
-    font-size: 16px;
 }
 
 h1 {
