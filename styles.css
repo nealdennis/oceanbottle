@@ -20,6 +20,8 @@ a {
     background-image: url(resources/images/banner-image.jpg);
 }
 
+/* Start Nav */
+
 header {
     display: flex;
     justify-content: flex-end;
@@ -41,6 +43,8 @@ nav li {
     height: auto;
     margin-right: auto;
 }
+
+/* End Nav */
 
 .banner-text {
     height: 100vh;
@@ -66,10 +70,15 @@ h2 {
     margin: 20px 0;
 }
 
-h5 {
-    font-size: 25px;
-    font-weight: 400;
-    margin-top: 5%;
+h3 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
 }
 
 h6 {
@@ -79,8 +88,7 @@ h6 {
 }
 
 p {
-    font-size: 16px;
-    
+    font-size: 16px;   
 }
 
 .features-header {
@@ -92,7 +100,7 @@ p {
 
 .triple-column {
     display: grid;
-    grid-template-columns: 14% 24% 24% 24% 14%;
+    grid-template-columns: 13% 24% 26% 24% 13%;
     align-content: center;
 }
 
@@ -119,7 +127,7 @@ p {
 }
 
 .feature-button {
-    padding-top: 40px;
+    padding: 60px 0;
     text-align: center;
 }
 
@@ -145,4 +153,39 @@ p {
 
 .blue {
     color: #012461;
+}
+
+.cleaning {
+    background: #D0D8D6;
+    display: grid;
+    grid-template-columns: 7% repeat(2, 1fr) 7%;
+    column-gap: 80px;
+    padding: 80px 0;
+}
+
+.stat-box {
+    border: 1px solid #a5bfeb;
+    margin: 40px 20px 0 60px;
+    padding: 20px;
+}
+
+.rivers {
+    background: #012461;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.rivers h2 {
+    margin-bottom: 40px;
+}
+
+.float-over {
+    display: flex;
+    border: 2px solid red;
+    height: auto;
+    justify-content: center;
+    margin-top: -100px;
 }
