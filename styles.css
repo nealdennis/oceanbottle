@@ -210,20 +210,21 @@ p {
 footer {
     background: #012461;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-start;
     padding: 30px 10%;
 }
 
-footer img {
-    margin-right: 20px;
-}
-
-.links {
+footer li {
     display: inline-block;
-    margin-right: auto;
+    padding: 0 10px;
+    font-weight: 600;
 }
 
 .social {
-    display: inline-block;
+    margin-left: auto;
+    font-size: 2em;
+}
+
+.links img {
+    padding: 0 20px 0 0;
 }
