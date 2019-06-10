@@ -39,7 +39,7 @@ header {
     padding: 30px 10%;
 }
 
-nav li {
+.menu li {
     display: inline-block;
     padding: 15px 20px;
 }
@@ -52,12 +52,12 @@ nav li {
 
 label{
     text-align: right;
-    margin-right: 20px;
-    font-size: 1.5em;
+    margin-right: 10px;
+    font-size: 50px;
     display: none;
 }
 
-.toggle {
+#toggle {
     display: none;
 }
 
@@ -281,18 +281,25 @@ footer li {
         }
 
         header {
-            display: inline;
+            padding: 20px 20px;
         }
         
-        .toggle {
+        label {
+            display: block;
+            cursor: pointer;
+        }
+
+        .menu {
+            display: none;
+            text-align: center;
+            width: 100%;
+        }
+
+        #toggle:checked + .menu {
             display: block;
         }
-        
-        nav ul {
-            z-index: 1;
-        }
+
         nav li {
-            display: block;
             padding: 20px 100px;
             background: #012461 ;
             border: 1px solid #093a8d;
