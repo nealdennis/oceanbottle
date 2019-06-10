@@ -50,10 +50,14 @@ nav li {
     margin-right: auto;
 }
 
-.toggle {
+label{
     text-align: right;
     margin-right: 20px;
     font-size: 1.5em;
+    display: none;
+}
+
+.toggle {
     display: none;
 }
 
@@ -86,7 +90,7 @@ h3 {
 
 h4 {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
     margin: 20px 0;
 }
 
@@ -98,6 +102,7 @@ h6 {
 
 p {
     font-size: 16px;   
+    padding-bottom: 12px;
 }
 
 .features-header {
@@ -182,7 +187,7 @@ p {
 
 .rivers, .contact {
     background: #012461;
-    height: 80vh;  
+    height: 500px;  
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -194,19 +199,23 @@ p {
     margin-bottom: 40px;
 }
 
+.contact {
+    justify-content: center;
+}
+
 .float-over {
     display: block;
     z-index: 100;
-    margin-top: -160px;
+    margin-top: -60px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .lifestyle {
     display: grid;
-    grid-template-columns: 7% repeat(2, 1fr) 7%;
-    column-gap: 80px;
-    padding: 80px 0;
+    grid-template-columns: 1px 1fr 1px 1fr;
+    column-gap: 40px;
+    padding: 80px 100px;  
 }
 
 .product {
@@ -214,10 +223,6 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.contact {
-    justify-content: center;
 }
 
 footer {
@@ -244,8 +249,41 @@ footer li {
 
  /*==========  Non-Mobile First Method  ==========*/
 
-    /* Small Devices, Tablets */
-    @media only screen and (max-width : 768px) {
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 40px;    
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        h6 {
+            font-size: 20px;
+        }
+
+        .float-over {
+            margin-top: -30px;
+            z-index: 100;
+            width: 850px;
+            height: auto;
+        }
+
+        header {
+            display: inline;
+        }
+        
         .toggle {
             display: block;
         }
@@ -255,19 +293,112 @@ footer li {
         }
         nav li {
             display: block;
-            padding: 0 100px;
-            background: #012461;
+            padding: 20px 100px;
+            background: #012461 ;
+            border: 1px solid #093a8d;
             font-size: 1.5em;
             text-align: center;
         }
+
+        .banner-text {
+            margin: 10px 20px;
+            text-align: center;
+        }
+
+        .middle {
+            display: none;
+            width: 1px;
+        }
+
+        .features {
+            display: block; 
+            text-align: center;
+        }
+
+        .cleaning {
+            display: block;
+            padding: 10px 80px;
+        }
+
+        .float-over {
+            display: block;
+            z-index: 1;
+            margin-top: 0px;
+        }
+
+        .lifestyle {
+            display: block;
+            column-gap: 0;
+            padding: 0 80px;
+        }
+
+        .lifestyle img {
+            display: none;
+        }
+
+        .product {
+            margin: 0 20px;
+        }
+
+        .product p {
+            margin: 10px 0;
+        }
+
     }
 
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (max-width : 480px) {
-       
-    }
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        h2 {
+            text-align: center;
+        }
 
-    /* Custom, iPhone Retina */ 
-    @media only screen and (max-width : 320px) {
+        h6 {
+            text-align: center;
+        }
 
+        .triple-column {
+            display: block;
+            padding: 0 60px;
+            margin: 0 auto;
+        }
+
+        .cleaning {
+            padding: 10px 20px;
+        }
+
+        .float-over {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .lifestyle {
+            padding: 10px 20px;
+        }
+
+        .rivers {   
+            display: block;
+            padding: 20px 20px;
+        }
+
+        .rivers h2 {
+            margin-top: 20px;
+        }
+
+        .product {
+            text-align: left;
+        }
+
+        .product .cta {
+            text-align: center; 
+        }
+
+        .contact {
+            height: 300px;
+        }
+
+        footer .links {
+            display: none;
+        }
+        
     }
