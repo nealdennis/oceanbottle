@@ -1,8 +1,8 @@
-Palette
+## What is this?
+A redesign of the OceanBottle site. Artwork from Dribbble (credit: Patryk Michalski). All coding done by me
 
-#000615
-#D0D8D6
-#012461
-#074E9D
-#1D8DD1
-#A5B4BB
+## Learnings?
+ * Building from image
+ * General layout
+ * Basic HTML and CSS
+ * Responsive design
