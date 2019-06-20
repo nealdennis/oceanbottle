@@ -1,5 +1,5 @@
 ## What is this?
-A redesign of the OceanBottle site artwork from Dribble. All coding done by me
+A redesign of the OceanBottle site. Artwork from Dribbble (credit: Patryk Michalski). All coding done by me
 
 ## Learnings?
  * Building from image
