@@ -252,6 +252,12 @@ footer li {
     padding: 0 20px 0 0;
 }
 
+/* == Animations == */
+.hideme
+{
+    opacity:0;
+}
+
  /*==========  Non-Mobile First Method  ==========*/
 
     /* Large Devices, Wide Screens */

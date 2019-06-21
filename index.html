@@ -3,6 +3,7 @@
     <head>
         <title>Ocean Bottle</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://kit.fontawesome.com/472e930855.js"></script>
     </head>
     <body>
@@ -35,7 +36,7 @@
             <h2>The World's most needed bottle</h2>
         </section>
         <section class="triple-column blue">
-            <div class="left">
+            <div class="left" data-aos="fade-right" data-aos-duration="1000">
                 <div class="features blue">
                     <div class="top-feature">
                         <h4>Double walled vacuum insulation</h4>
@@ -54,7 +55,7 @@
             <div class="middle">
                 <img src="resources/images/bottle.png" alt="The Bottle image">
             </div>
-            <div class="right">
+            <div class="right" data-aos="fade-left" data-aos-duration="1000">
                 <div class="features blue">
                     <div class="top-feature">
                         <h4>Anti-leak</h4>
@@ -75,7 +76,7 @@
             <a href="#" class="cta blue-button">Get your bottle</a>
         </section>
         <section class="cleaning" id="impact">
-            <div class="left blue">
+            <div class="left blue" data-aos="fade-right" data-aos-duration="1000">
                 <h6>Cleaning</h6>
                 <h2>More than just a beach clean up.</h2>
                 <p>Ocean Plastic is growing by 22 million kgs each day.
@@ -90,11 +91,11 @@
                     <h6>of plastic has entered our oceans since you visited this page</h6> 
                 </div>
             </div>
-            <div class="middle">
+            <div class="middle" data-aos="fade-left" data-aos-duration="1000">
                 <img src="resources/images/beach-waste.png" alt="plastic bottle on beach">
             </div>
         </section>
-        <section class="rivers">
+        <section class="rivers" data-aos="fade-up" data-aos-duration="1000">
             <h2>Rivers are the key to ocean plastic</h2>
             <p>Over 80% of ocean plastic comes from regions that lack recycling infrastructure and the waterways that flow through them.</p>
             <p>Rivers are often used to dispose of plastic waste because there’s no better alternative.</p>
@@ -103,10 +104,10 @@
         </section>
         <img class="float-over" src="resources/images/map.png" alt="map showing world locations where ocean bottle operates">
         <section class="lifestyle">
-            <div class="left">
+            <div class="left" data-aos="fade-right" data-aos-duration="1000">
                 <img src="resources/images/beach-waste.png">
             </div>
-            <div class="right blue">
+            <div class="right blue" data-aos="fade-left" data-aos-duration="1000">
                 <h6>lifestyle</h6>
                 <h2>From poverty line to 6 dollars a day</h2>
                 <p>We’ve teamed up with The Plastic Bank to build a global team of plastic collectors.
@@ -116,7 +117,7 @@
                 <p>This increase in value can be life changing. It means you can shift from living beneath the poverty line to being able to put food on the table, send your kids to school, afford medical insurance, open your first bank account and even finance solar energy.</p>
             </div>
         </section>
-        <section class="product blue">
+        <section class="product blue" data-aos="fade-up" data-aos-duration="1000">
             <h6>lifestyle</h6>
             <h2>Get your Ocean Bottle</h2>
             <p>Each bottle is activated with an NFC smart chip. We are developing digitial features with our partners, which will</p>
@@ -143,5 +144,10 @@
                 <li><span class="fab fa-twitter-square"></span></li>
             </ul>
         </footer>
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
