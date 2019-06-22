@@ -10,7 +10,6 @@ body {
     color: white;
     font-family: 'EB Garamond', serif;
     font-size: 16px;
-    scroll-behavior: smooth;
 } 
 
 a {
@@ -250,12 +249,6 @@ footer li {
 
 .links img {
     padding: 0 20px 0 0;
-}
-
-/* == Animations == */
-.hideme
-{
-    opacity:0;
 }
 
  /*==========  Non-Mobile First Method  ==========*/
