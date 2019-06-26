@@ -284,52 +284,9 @@ footer li {
             height: auto;
         }
 
-        header {
-            padding: 10px 0;
-        }
-        
-        label {
-            display: block;
-            cursor: pointer;
-        }
-
-        .menu {
-            display: none;
-        }
-
-        .logo {
-            display: none;
-        }
-
-        input[type="checkbox"]:checked ~ .menu {
-            display: block;
-            text-align: center;
-            width: 100%;
-            z-index: 100;
-        }
-
-        nav {
-            margin-right: 0;
-            width: 100%;
-        }
-
-        nav li {
-            width: 100%;
-            padding: 20px 100px;
-            background: #012461 ;
-            border: 1px solid #093a8d;
-            font-size: 1.5em;
-            text-align: center;
-        }
-
         .banner-text {
             margin: 10px 20px;
             text-align: center;
-        }
-
-        .middle {
-            display: none;
-            width: 1px;
         }
 
         .features {
@@ -368,6 +325,26 @@ footer li {
 
     }
 
+    @media only screen and (max-width: 1000px) {
+       .triple-column {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .middle {
+            display: none;
+        }
+        .left {
+            border-right: 1px solid rgba(1, 36, 97, 0.2);
+        }
+
+        .right {
+            border-left: 1px solid rgba(1, 36, 97, 0.2);
+        }
+    }
+
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
         h2 {
@@ -375,6 +352,44 @@ footer li {
         }
 
         h6 {
+            text-align: center;
+        }
+
+        header {
+            padding: 10px 0;
+        }
+        
+        label {
+            display: block;
+            cursor: pointer;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .logo {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ .menu {
+            display: block;
+            text-align: center;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav {
+            margin-right: 0;
+            width: 100%;
+        }
+
+        nav li {
+            width: 100%;
+            padding: 20px 100px;
+            background: rgba(1, 36, 97, 0.7);
+            border: 1px solid #093a8d;
+            font-size: 1.5em;
             text-align: center;
         }
 
